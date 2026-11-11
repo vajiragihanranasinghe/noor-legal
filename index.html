@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noor Islamic App — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+  h1 { color: #1b4332; border-bottom: 3px solid #2d6a4f; padding-bottom: 8px; }
+  h2 { color: #2d6a4f; margin-top: 32px; }
+  h3 { color: #333; }
+  a { color: #2d6a4f; }
+  .meta { color: #666; font-size: 0.9em; margin-bottom: 24px; }
+  .highlight { background: #e8f5e9; border-left: 4px solid #2d6a4f; padding: 12px 16px; margin: 20px 0; border-radius: 4px; }
+  ul { padding-left: 24px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+  th { background: #e8f5e9; }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #ddd; color: #666; font-size: 0.9em; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Noor Islamic App</h1>
+<p class="meta"><strong>Package:</strong> com.noor.islamicapp &nbsp;|&nbsp; <strong>Effective date:</strong> November 11, 2026</p>
+
+<div class="highlight">
+<strong>Summary:</strong> Noor Islamic App does <strong>not</strong> collect, store, or share personal data on any server. Your location is used only on your device to calculate prayer times and Qibla direction. There are no ads, no analytics, no tracking, and no account required.
+</div>
+
+<h2>1. Who We Are</h2>
+<p>Noor Islamic App ("we", "our", "the app") is developed and published by Vajira Ranasinghe (individual developer) from Colombo, Sri Lanka. You can contact us at <a href="mailto:vajira.dev@gmail.com">vajira.dev@gmail.com</a>.</p>
+
+<h2>2. Data We Do NOT Collect</h2>
+<ul>
+  <li>Your name, email, phone number, or any account info</li>
+  <li>Your precise location history</li>
+  <li>Your contacts, photos, SMS, or call logs</li>
+  <li>Advertising identifiers (GAID, IDFA)</li>
+  <li>Analytics data (no analytics SDK)</li>
+  <li>Crash reports sent to third parties</li>
+  <li>Device fingerprinting</li>
+</ul>
+
+<h2>3. Data Used Locally on Your Device</h2>
+
+<h3>3.1 Location (GPS &amp; Network)</h3>
+<p>When you tap "Find Qibla" or when the app calculates prayer times, the app requests your current location using Android's standard location APIs.</p>
+<ul>
+  <li><strong>What is accessed:</strong> Your approximate or precise latitude and longitude.</li>
+  <li><strong>Where it goes:</strong> Stays on your device, stored only in the app's private storage.</li>
+  <li><strong>Why:</strong> To calculate accurate prayer times and the Qibla direction.</li>
+  <li><strong>Do we transmit it?</strong> No. Location is never sent to our servers or any third party.</li>
+  <li><strong>Can you disable it?</strong> Yes, in Android Settings at any time.</li>
+</ul>
+
+<h3>3.2 Prayer Time Notifications &amp; Alarms</h3>
+<p>You can enable Adhan reminders using Android's <code>AlarmManager</code> with exact-alarm permissions. Alarm schedules are stored only on your device and never transmitted.</p>
+
+<h3>3.3 Adhan Audio Playback</h3>
+<p>If enabled, the app uses a foreground service with <code>mediaPlayback</code> type to play Adhan audio. No microphone access is requested.</p>
+
+<h3>3.4 Boot Completion</h3>
+<p>The app listens for <code>BOOT_COMPLETED</code> only to re-schedule your existing prayer alarms after a reboot. No data is sent anywhere.</p>
+
+<h3>3.5 Network Requests</h3>
+<p>The app may fetch prayer time data or Quran content from public APIs (for example, Aladhan.com). These requests contain only the parameters needed to compute results (date, coordinates, timezone) — no personal identifiers, no cookies, no tracking headers.</p>
+
+<h2>4. Permissions We Request — And Why</h2>
+<table>
+  <tr><th>Permission</th><th>Why we need it</th></tr>
+  <tr><td>INTERNET</td><td>Fetch prayer times and Quran content</td></tr>
+  <tr><td>ACCESS_NETWORK_STATE</td><td>Check if internet is available</td></tr>
+  <tr><td>ACCESS_FINE_LOCATION</td><td>Qibla direction + accurate prayer times</td></tr>
+  <tr><td>ACCESS_COARSE_LOCATION</td><td>Approximate prayer times when GPS is off</td></tr>
+  <tr><td>VIBRATE</td><td>Gentle vibration for Adhan reminders</td></tr>
+  <tr><td>RECEIVE_BOOT_COMPLETED</td><td>Re-schedule alarms after reboot</td></tr>
+  <tr><td>POST_NOTIFICATIONS</td><td>Show Adhan notifications</td></tr>
+  <tr><td>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</td><td>Fire Adhan at exact prayer time</td></tr>
+  <tr><td>WAKE_LOCK</td><td>Keep alarm working when screen is off</td></tr>
+  <tr><td>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>Play Adhan audio reliably</td></tr>
+</table>
+
+<h2>5. Children's Privacy</h2>
+<p>Noor Islamic App is suitable for all ages. We do <strong>not</strong> knowingly collect any personal information from anyone, including children under 13. Since we do not collect any personal data, the app complies with COPPA and GDPR-K.</p>
+
+<h2>6. Third-Party Services</h2>
+<ul>
+  <li><strong>Google Play Services (Location APIs)</strong> — to obtain GPS location</li>
+  <li><strong>Public prayer-time APIs</strong> (e.g., Aladhan.com) — to fetch prayer schedules</li>
+</ul>
+<p>We do not use Google Analytics, Firebase Analytics, AdMob, Facebook SDK, or any advertising or tracking SDK.</p>
+
+<h2>7. Your Rights (GDPR / CCPA)</h2>
+<p>Because we do not collect or store any personal data on servers, there is nothing for you to request, delete, or export. You can clear all app data anytime via Android Settings → Apps → Noor Islamic App → Storage → Clear Data.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>If we update this policy, we will change the "Effective date" above and post the new version at this URL.</p>
+
+<h2>9. Contact Us</h2>
+<p>📧 <a href="mailto:vajira.dev@gmail.com">vajira.dev@gmail.com</a><br>
+🐙 <a href="https://github.com/vajiragihanranasinghe">github.com/vajiragihanranasinghe</a></p>
+
+<footer>
+  © 2026 Vajira Ranasinghe · Noor Islamic App · Built with love for the Ummah
+</footer>
+
+</body>
+</html>
